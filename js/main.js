@@ -118,7 +118,6 @@
 })(jQuery);
 
 /* whatsapp chat widget code */
-
 let wsStarted = false;
 let wsStep = 0;
 let wsIsCustom = false;
@@ -385,7 +384,7 @@ Address: ${wsOrder.address}
 
 Please confirm order.`;
 
-  let phone = "19293863884";
+  let phone = "19174884497";
 
   let url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
 
