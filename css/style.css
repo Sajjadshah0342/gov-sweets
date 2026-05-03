@@ -6,13 +6,14 @@
 }
 
 /* 👈 whatsapp start*/
-/* Floating Button */
 
-/* Floating Button */
+/* =========================
+   FLOATING BUTTON
+========================= */
 .ws-toggle-btn {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 107px;
+  right: 35px;
   width: 60px;
   height: 60px;
   background: #25D366;
@@ -27,13 +28,15 @@
   z-index: 9999;
 }
 
-/* Chat Widget */
+/* =========================
+   CHAT WINDOW
+========================= */
 .ws-chat-widget {
   width: 320px;
   position: fixed;
   bottom: 90px;
   right: 20px;
-  background: #ffffff !important;  
+  background: #ffffff !important;
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.3);
   overflow: hidden;
@@ -43,22 +46,48 @@
   box-sizing: border-box;
 }
 
-/* Header */
+/* =========================
+   HEADER
+========================= */
 .ws-header {
   background: #25D366;
   color: white;
   padding: 10px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  gap: 8px;
 }
 
-/* Chat Box */
+/* Back Button */
+.ws-back-btn {
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 8px;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+/* Header title */
+.ws-header span:nth-child(2) {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* =========================
+   CHAT AREA
+========================= */
 #wsChatBox {
   height: 220px;
-  line-height: 1.5;
   padding: 12px;
   overflow-y: auto;
   border-bottom: 1px solid #eee;
+  background: #fff;
 }
 
 /* Messages */
@@ -66,8 +95,10 @@
   margin: 6px 0;
   font-size: 14px;
   background: #f5f5f5;
-  padding: 6px 10px;
-  border-radius: 6px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  max-width: 85%;
+  word-break: break-word;
 }
 
 .ws-bot {
@@ -77,9 +108,12 @@
 .ws-user {
   text-align: right;
   color: #1565c0;
+  margin-left: auto;
 }
 
-/* Options */
+/* =========================
+   OPTIONS
+========================= */
 #wsOptions {
   display: flex;
   flex-wrap: wrap;
@@ -90,6 +124,7 @@
 /* Buttons */
 .ws-btn {
   flex: 1;
+  min-width: 48%;
   padding: 8px;
   border: none;
   background: #25D366;
@@ -97,12 +132,61 @@
   border-radius: 6px;
   cursor: pointer;
   font-size: 13px;
+  transition: 0.2s ease;
 }
 
 .ws-btn:hover {
   background: #1ebe5d;
+  transform: scale(1.02);
 }
 
+/* =========================
+   INPUT BOXES
+========================= */
+#wsCustomInputBox,
+#wsAddressBox {
+  padding: 10px;
+  border-top: 1px solid #eee;
+  background: #fff;
+}
+
+/* Inputs */
+#wsCustomInput,
+#wsAddressInput {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 480px) {
+  .ws-chat-widget {
+    width: 95%;
+    right: 2.5%;
+    bottom: 80px;
+  }
+
+  .ws-toggle-btn {
+    right: 15px;
+    bottom: 90px;
+  }
+
+  #wsChatBox {
+    height: 200px;
+  }
+}
+
+/* =========================
+   GLOBAL SAFETY FIX
+========================= */
+.ws-chat-widget * {
+  box-sizing: border-box;
+}
   /* 👈 whatsapp end*/
 
 .ff-secondary {
