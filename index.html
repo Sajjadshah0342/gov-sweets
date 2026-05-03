@@ -43,6 +43,36 @@
         <!-- Spinner End -->
 
 
+
+
+        <!-- Whatsapp start-->
+
+<!-- WhatsApp Floating Button -->
+<div class="ws-toggle-btn" onclick="wsToggleChat()">
+  💬
+</div>
+
+<!-- Chat Widget -->
+<div class="ws-chat-widget" id="wsChatWidget">
+
+  <div class="ws-header">
+    <span>Gourmet Sweets And Restaurant Live Support</span>
+    <span onclick="wsToggleChat()" style="cursor:pointer;">✖</span>
+  </div>
+
+  <div id="wsChatBox"></div>
+
+  <div id="wsOptions"></div>
+
+</div>
+        <!-- Whatsapp End-->
+
+        
+
+
+
+
+
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
@@ -77,9 +107,9 @@
                 <div class="container my-5 py-5">
                     <div class="row align-items-center g-5">
                         <div class="col-lg-6 text-center text-lg-start">
-                            <h1 class="display-3 text-white animated slideInLeft">Enjoy Our Main<br>Delicious Meal</h1>
-                            <p class="text-white animated slideInLeft mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                            <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A Table</a>
+                            <h1 class="display-3 text-white animated slideInLeft">Enjoy<br> Pakistani Food & Sweets in Brooklyn</h1>
+                            <p class="text-white animated slideInLeft mb-4 pb-2">Bringing the rich taste of Pakistan to your table with traditional recipes, fresh ingredients, and exceptional service at our restaurant in Brooklyn gourmet sweets and restaurants.</p>
+                            <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Order Online</a>
                         </div>
                         <div class="col-lg-6 text-center text-lg-end overflow-hidden">
                             <img class="img-fluid" src="img/hero.png" alt="">
@@ -92,48 +122,62 @@
 
 
         <!-- Service Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
-                                <h5>Master Chefs</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
-                                <h5>Quality Food</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
-                                <h5>Online Order</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-headset text-primary mb-4"></i>
-                                <h5>24/7 Service</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                            </div>
-                        </div>
+  <div class="container-xxl py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Best Gourmet Pakistani Restaurant Services in Brooklyn, NYC</h2>
+        <div class="row g-4">
+
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4 text-justify">
+                        <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                        <h5>Master Chefs</h5>
+                        <p style="text-align: justify;">
+                            At our gourmet restaurant in Brooklyn, our master chefs prepare authentic Pakistani food using traditional recipes, delivering rich desi flavors in every dish.
+                        </p>
                     </div>
                 </div>
             </div>
+
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4 text-justify">
+                        <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+                        <h5>Quality Food</h5>
+                        <p style="text-align: justify;">
+                            We serve premium halal food in NYC made with fresh ingredients and authentic spices, making us a trusted choice for Pakistani cuisine in Brooklyn.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4 text-justify">
+                        <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
+                        <h5>Online Order</h5>
+                        <p style="text-align: justify;">
+                            Order online from our gourmet Pakistani restaurant and enjoy fast delivery of desi food and traditional sweets across Brooklyn, New York.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4 text-justify">
+                        <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+                        <h5>24/7 Service</h5>
+                        <p style="text-align: justify;">
+                            Our team provides reliable customer support for catering, online orders, and inquiries, ensuring a smooth experience at our gourmet restaurant in NYC.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
+    </div>
+</div>
         <!-- Service End -->
 
 
@@ -157,33 +201,44 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                   <div class="col-lg-6">
                         <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
-                        <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>Restoran</h1>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>Gourmet Sweets Restaurant</h1>
+
+                        <p class="mb-4" style="text-align: justify;">
+                            Gourmet Sweets Restaurant is a leading gourmet restaurant in Brooklyn, New York, proudly serving authentic Pakistani food and traditional desi cuisine. Our passion is to bring the rich flavors of Pakistan to the heart of NYC by combining time-honored recipes with fresh, high-quality halal ingredients.
+                        </p>
+
+                        <p class="mb-4" style="text-align: justify;">
+                            From flavorful biryani and karahi to handcrafted sweets like gulab jamun and barfi, we offer a complete culinary experience. Whether you are dining in, ordering online, or booking catering services, our goal is to deliver exceptional taste, premium quality, and outstanding service every time.
+                        </p>
+
                         <div class="row g-4 mb-4">
+
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15</h1>
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">30</h1>
                                     <div class="ps-4">
                                         <p class="mb-0">Years of</p>
                                         <h6 class="text-uppercase mb-0">Experience</h6>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1>
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">10</h1>
                                     <div class="ps-4">
-                                        <p class="mb-0">Popular</p>
+                                        <p class="mb-0">Expert</p>
                                         <h6 class="text-uppercase mb-0">Master Chefs</h6>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
-                    </div>
+
+                     </div>
+
+    <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+</div>
                 </div>
             </div>
         </div>
@@ -202,7 +257,7 @@
                     <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
                         <li class="nav-item">
                             <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
-                                <i class="fa fa-coffee fa-2x text-primary"></i>
+                                <i class="fa fa-egg fa-2x text-primary"></i>
                                 <div class="ps-3">
                                     <small class="text-body">Popular</small>
                                     <h6 class="mt-n1 mb-0">Breakfast</h6>
@@ -211,7 +266,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
-                                <i class="fa fa-hamburger fa-2x text-primary"></i>
+                                <i class="fa fa-bread-slice fa-2x text-primary"></i>
                                 <div class="ps-3">
                                     <small class="text-body">Special</small>
                                     <h6 class="mt-n1 mb-0">Naan / Roti</h6>
@@ -220,7 +275,7 @@
                         </li>
                          <li class="nav-item">
                             <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-3">
-                                <i class="fa fa-hamburger fa-2x text-primary"></i>
+                                <i class="fa fa-drumstick-bite fa-2x text-primary"></i>
                                 <div class="ps-3">
                                     <small class="text-body">Lovely</small>
                                     <h6 class="mt-n1 mb-0">Lunch</h6>
@@ -238,7 +293,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-5">
-                                <i class="fa fa-utensils fa-2x text-primary"></i>
+                                <i class="fa fa-glass-whiskey fa-2x text-primary"></i>
                                 <div class="ps-3">
                                     <small class="text-body">Beverages</small>
                                     <h6 class="mt-n1 mb-0">Appetizers</h6>
@@ -247,7 +302,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-6">
-                                <i class="fa fa-utensils fa-2x text-primary"></i>
+                                <i class="fa fa-heart fa-2x text-primary"></i>
                                 <div class="ps-3">
                                     <small class="text-body">Sweets</small>
                                     <h6 class="mt-n1 mb-0">Desserts</h6>
@@ -336,7 +391,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-7.jpg" alt="" style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-7.png" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Garlic Naan</span>
@@ -348,7 +403,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.avif" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Sesame Roghni Naan</span>
@@ -360,7 +415,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-9.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Chicken Keema Naan</span>
@@ -1341,6 +1396,118 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
+    <script>
+let wsStarted = false;
+let wsStep = 0;
+
+let wsOrder = {
+  category: "",
+  item: "",
+  quantity: ""
+};
+
+function wsToggleChat() {
+  let widget = document.getElementById("wsChatWidget");
+
+  if (widget.style.display === "block") {
+    widget.style.display = "none";
+  } else {
+    widget.style.display = "block";
+
+    if (!wsStarted) {
+      wsStartChat();
+      wsStarted = true;
+    }
+  }
+}
+
+function wsAddMsg(text, type) {
+  let div = document.createElement("div");
+  div.className = "ws-msg " + type;
+  div.innerText = text;
+  document.getElementById("wsChatBox").appendChild(div);
+}
+
+function wsShowOptions(list) {
+  let options = document.getElementById("wsOptions");
+  options.innerHTML = "";
+
+  list.forEach(text => {
+    let btn = document.createElement("button");
+    btn.className = "ws-btn";
+    btn.innerText = text;
+    btn.onclick = () => wsHandleInput(text);
+    options.appendChild(btn);
+  });
+}
+
+function wsStartChat() {
+  wsAddMsg("Hi Welcome! What would you like to Order?", "ws-bot");
+  wsShowOptions(["Sweets 🍩", "Food 🍽️"]);
+}
+
+function wsHandleInput(input) {
+
+  wsAddMsg(input, "ws-user");
+
+  if (wsStep === 0) {
+    if (input.includes("Sweets")) {
+      wsOrder.category = "Sweets";
+      wsStep = 1;
+
+      wsAddMsg("Choose your sweets:", "ws-bot");
+      wsShowOptions(["Gulab Jamun", "Barfi", "Ras Gula", "Jalebi", "Kheer", "Gajar Halwa",
+         "Moti Chor Lado", "Kalakand", "Mixed Sweets", "Special Barfi", "Others"]);
+
+    } else if (input.includes("Food")) {
+      wsOrder.category = "Food";
+      wsStep = 1;
+
+      wsAddMsg("Choose type:", "ws-bot");
+      wsShowOptions(["Chicken Karai", "Goat Karai", "Chicken Tandoori Leg", "Chicken Chapli Kabab", "Shami Kabab", 
+      "Lamb Chops 3pc", "Chicken Kabab","Other Food"]);
+    }
+    return;
+  }
+
+  if (wsStep === 1) {
+    wsOrder.item = input;
+    wsStep = 2;
+
+    wsAddMsg("Select quantity:", "ws-bot");
+    wsShowOptions(["1", "2", "3", "4", "5", "6", "7", "8", "9", "10+"]);
+    return;
+  }
+
+  if (wsStep === 2) {
+    wsOrder.quantity = input;
+
+    wsAddMsg("Redirecting to WhatsApp...", "ws-bot");
+
+    wsSendToWhatsApp();
+  }
+}
+
+function wsSendToWhatsApp() {
+
+  let message =
+`🍽️ New Order:
+Category: ${wsOrder.category}
+Item: ${wsOrder.item}
+Quantity: ${wsOrder.quantity}
+
+Please confirm order.`;
+
+  let phone = "+19293863884"; // 🔴 replace with your number
+
+  let url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+
+  setTimeout(() => {
+    window.open(url, "_blank");
+  }, 800);
+}
+</script>
 </body>
 
 </html>
