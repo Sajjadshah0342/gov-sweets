@@ -189,6 +189,29 @@
 }
   /* 👈 whatsapp end*/
 
+
+.privacy-box {
+    transition: all 0.3s ease;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.privacy-box:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-box i {
+    transition: all 0.3s ease;
+}
+
+.privacy-box:hover i {
+    transform: scale(1.2);
+    color: #FEA116;
+}
+
+
 .ff-secondary {
     font-family: 'Pacifico', cursive;
 }
