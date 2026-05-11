@@ -444,11 +444,228 @@
     position: relative;
     height: 100%;
     min-height: 500px;
-    background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(../img/video.jpg);
+    background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(../img/qaiser-choudhry.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+/** CEO Start **//* Luxury CEO Section */
+
+/* ========================================
+   Luxury CEO Section
+======================================== */
+
+.luxury-ceo-card{
+    background: linear-gradient(135deg, #0f172b 0%, #1a2238 100%);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    position: relative;
+    border-radius: 18px;
+}
+
+/* ========================================
+   CEO Image
+======================================== */
+
+.ceo-image{
+    width: 100%;
+    height: 100%;
+    min-height: 700px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.ceo-image:hover{
+    transform: scale(1.03);
+}
+
+/* ========================================
+   Dark Overlay
+======================================== */
+
+.luxury-overlay{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(15, 23, 43, 0.75),
+        rgba(15, 23, 43, 0.10)
+    );
+    z-index: 1;
+}
+
+/* ========================================
+   Experience Box
+======================================== */
+
+.experience-box{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    z-index: 2;
+
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(10px);
+
+    padding: 18px 28px;
+
+    border-left: 4px solid #FEA116;
+    border-radius: 12px;
+
+    max-width: 260px;
+}
+
+.experience-box h1{
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.experience-box p{
+    margin: 0;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ========================================
+   Signature Line
+======================================== */
+
+.signature-line{
+    width: 70px;
+    height: 2px;
+    background: #FEA116;
+    margin-right: 20px;
+}
+
+/* ========================================
+   Content Padding
+======================================== */
+
+.p-lg-6{
+    padding: 70px;
+}
+
+/* ========================================
+   Typography
+======================================== */
+
+.luxury-ceo-card h1,
+.luxury-ceo-card h2,
+.luxury-ceo-card h3,
+.luxury-ceo-card h4,
+.luxury-ceo-card h5{
+    color: #ffffff;
+}
+
+.luxury-ceo-card p{
+    color: rgba(255,255,255,0.85);
+}
+
+/* ========================================
+   Tablet Responsive
+======================================== */
+
+@media (max-width: 991px){
+
+    .ceo-image{
+        min-height: 500px;
+    }
+
+    .p-lg-6{
+        padding: 45px;
+    }
+
+    .experience-box{
+        bottom: 25px;
+        left: 25px;
+        padding: 15px 22px;
+    }
+
+}
+
+/* ========================================
+   Mobile Responsive
+======================================== */
+
+@media (max-width: 767px){
+
+    .ceo-image{
+        min-height: 350px;
+    }
+
+    .p-lg-6{
+        padding: 30px 25px;
+    }
+
+    .experience-box{
+        bottom: 20px;
+        left: 20px;
+        padding: 12px 18px;
+        max-width: 210px;
+    }
+
+    .experience-box h1{
+        font-size: 28px;
+    }
+
+    .experience-box p{
+        font-size: 12px;
+    }
+
+    .signature-line{
+        width: 40px;
+        margin-right: 12px;
+    }
+
+    .luxury-ceo-card h1{
+        font-size: 2rem;
+    }
+
+    .luxury-ceo-card h2{
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    .luxury-ceo-card p{
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+}
+
+/* ========================================
+   Small Devices
+======================================== */
+
+@media (max-width: 480px){
+
+    .p-lg-6{
+        padding: 25px 20px;
+    }
+
+    .luxury-ceo-card h1{
+        font-size: 1.7rem;
+    }
+
+    .luxury-ceo-card h2{
+        font-size: 1.3rem;
+    }
+
+    .luxury-ceo-card p{
+        font-size: 14px;
+    }
+
+    .experience-box{
+        max-width: 190px;
+    }
+
+}
+/** CEO End **/
+
 
 .video .btn-play {
     position: absolute;
